@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment1.SortingHubController">
+   <children>
+      <Button fx:id="resetBtn" layoutX="734.0" layoutY="344.0" mnemonicParsing="false" onAction = "#reset" text="Reset" />
+      <Button fx:id="sortBtn" layoutX="684.0" layoutY="344.0" mnemonicParsing="false" onAction="#setSortStrategy" text="Sort" />
+      <Slider fx:id="sliderObject" layoutX="325.0" layoutY="349.0" max="128.0" min="32.0" onDragDetected="#onSliderMoved" onDragDone="#onSliderMoved" onInputMethodTextChanged="#onSliderMoved" onMouseClicked="#onSliderMoved" onMouseDragged="#onSliderMoved" prefHeight="14.0" prefWidth="300.0" value="64.0" />
+      <Label layoutX="253.0" layoutY="348.0" text="Array Size" />
+      <Label fx:id="sliderValue" layoutX="649.0" layoutY="348.0" text="64" />
+      <ComboBox fx:id="algorithmsComboBox" layoutX="90.0" layoutY="344.0" prefWidth="150.0" />
+      <Label layoutX="21.0" layoutY="348.0" text="Algorithm" />
+      <Canvas fx:id="canvasBars" height="300.0" layoutX="25.0" layoutY="26.0" width="750.0" />
+   </children>
+</AnchorPane>
